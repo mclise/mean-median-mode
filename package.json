@@ -1,0 +1,19 @@
+{
+  "name": "Mean-Med-Mode",
+  "version": "1.0.0",
+  "description": "Node program to find the mean, median, and mode of a set of values",
+  "main": "central_tendancy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mclise/mean-median-mode.git"
+  },
+  "author": "Matt Clise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mclise/mean-median-mode/issues"
+  },
+  "homepage": "https://github.com/mclise/mean-median-mode"
+}
