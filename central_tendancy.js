@@ -12,8 +12,7 @@ var centralTendency = function(){
   }
 
   // Remove the first two items in the arguments array ('node' and the file path)
-  arguments.shift();
-  arguments.shift();
+  arguments.splice(0, 2);
   arguments = arguments.map(function(num){
     return parseInt(num)
   });
@@ -46,7 +45,6 @@ var centralTendency = function(){
       tempCount = 1;
     }
   }
-
 
   
   console.log("Mean: " + mean);
