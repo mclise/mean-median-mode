@@ -30,13 +30,12 @@ var centralTendency = function(){
   // Find the median
   if (mid % 1 !== 0){
     median = arguments[Math.floor(mid)]
-  }
-  else {
+  } else {
     median = (arguments[Math.floor(mid)] + arguments[Math.ceil(mid)]) / 2
   }
 
-  // Find the mode
-  for (i = 0; i < arguments.length -1; i++){
+  // Find the mode (can only return one mode right now)
+  for (i = 0; i < arguments.length - 1; i++){
     
     if (arguments[i] === arguments[i + 1]){
       tempCount++;
@@ -44,9 +43,7 @@ var centralTendency = function(){
         mode = arguments[i];
         count = tempCount;
       }
-    }
-    
-    else{
+    } else {
       tempCount = 1;
     }
   }
@@ -57,9 +54,8 @@ var centralTendency = function(){
   console.log("Median: " + median);
   if (!mode){
     console.log("There is no mode");
-  }
-  else {
-  console.log("Mode: " + mode);
+  } else {
+    console.log("Mode: " + mode);
   }
 };
 
