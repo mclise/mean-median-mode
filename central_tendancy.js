@@ -18,7 +18,6 @@ var centralTendency = function(){
     return parseInt(num)
   });
   arguments.sort(compare);
-  mid = arguments.length / 2;
 
   // Find the mean
   for (i = 0; i < arguments.length; i++){
@@ -26,8 +25,8 @@ var centralTendency = function(){
   }
   mean = total / arguments.length;
 
-
   // Find the median
+  mid = arguments.length / 2;
   if (mid % 1 !== 0){
     median = arguments[Math.floor(mid)]
   } else {
